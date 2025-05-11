@@ -6,12 +6,15 @@ import joblib
 import re
 import numpy as np
 from nltk.corpus import stopwords
+import nltk
+nltk.download("stopwords")
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import LatentDirichletAllocation
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from scipy.sparse import hstack
+
 
 # --------------------------
 # Load pre-trained components
